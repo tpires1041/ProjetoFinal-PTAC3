@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/main.module.css";
 import { listaDeAeronaves } from "@/app/api/route";
 
@@ -14,6 +15,9 @@ export default function Main() {
             Fabricante: {aeronave.fabricante}, Ano: {aeronave.ano}
           </p>
           <p>{aeronave.preco}</p>
+          <Link href={"/product/" + aeronave.id}>
+              <button>Ver Mais</button>
+            </Link>
         </div>
       ))}
     </main>
