@@ -102,6 +102,6 @@ export const listaDeAeronaves = [
     }
 ];
 
-export async function GET(){
-    return NextResponse.json(listaDeAeronaves)
-}
+export async function GET() {
+    return NextResponse.json(listaDeAeronaves);
+  }

@@ -41,20 +41,20 @@ export default function Main() {
   return (
     <>
       <main className={styles.main}>
-        {listProduct.map((products) => (
-          <div className={styles.card} key={products.id}>
-            <p>{products.modelo.slice(0, 6)}...</p>
+        {listProduct.map((aeronaves) => (
+          <div className={styles.card} key={aeronaves.id}>
+            <p>{aeronaves.modelo}</p>
 
-            <Image width={300} height={300} src={products.image} alt={products.modelo} />
+            <Image width={300} height={300} src={aeronaves.image} alt={aeronaves.modelo} />
 
-            <p>{products.categoria}</p>
+            <p>{aeronaves.categoria}</p>
 
             <p className={styles.description}>
-              {products.fabricante} - {products.ano} </p>
+              {aeronaves.fabricante} - {aeronaves.ano} </p>
 
-            <p>{products.preco}</p>
+            <p>{aeronaves.preco}</p>
 
-            <Link href={"/product/" + products.id}>
+            <Link href={"/aeronaves/" + aeronaves.id}>
               <button>Ver Mais</button>
             </Link>
 
