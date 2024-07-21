@@ -2,8 +2,10 @@
 const nextConfig = {
 
     images:{
-        domains:["m.media-amazon.com"],
-        domains:["img.flightmarket.com.br"]
+        domains:["m.media-amazon.com",
+                 "img.flightmarket.com.br",
+                 "fakestoreapi.com",
+        ],
     }
 };
 
